@@ -1,19 +1,56 @@
-{
-	"extends": "./.svelte-kit/tsconfig.json",
-	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"skipLibCheck": true,
-		"sourceMap": true,
-		"strict": true,
-		"target": "ES2018"
-	},
-	"exclude": ["vite.config.ts"]
-	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
-	//
-	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
-	// from the referenced tsconfig.json - TypeScript does not merge them in
-}
+# Hugging Vercel UI
+
+This project is a SvelteKit-based UI for interacting with Hugging Face models through Vercel.
+
+## Features
+
+- SvelteKit framework
+- Integration with Hugging Face models
+- Deployment-ready for various platforms
+
+## Quick Deployment
+
+Choose your preferred platform to deploy this project:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Flikhonisaac%2Fhugging-vercel-ui&env=API_KEY,DATABASE_URL&project-name=hugging-vercel-ui&repository-name=hugging-vercel-ui)
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Flikhonisaac%2Fhugging-vercel-ui)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/likhonisaac/hugging-vercel-ui)
+
+## Environment Variables
+
+This project requires the following environment variables:
+
+- `API_KEY`: Your Hugging Face API key
+- `DATABASE_URL`: URL for your database connection
+
+Make sure to set these in your deployment platform's settings.
+
+## Local Development
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/likhonisaac/hugging-vercel-ui.git
+   ```
+
+2. Install dependencies:
+   ```
+   cd hugging-vercel-ui
+   npm install
+   ```
+
+3. Set up your environment variables in a `.env` file.
+
+4. Run the development server:
+   ```
+   npm run dev
+   ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
